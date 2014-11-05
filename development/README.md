@@ -40,7 +40,7 @@ Write it if you need it.
 # Starting a project
 Add when you do this.
 
-# Hopping on an existing project
+# Joining an existing project
 
 - [ ] Clone the Git Repository
 - [ ] Install Dependencies
