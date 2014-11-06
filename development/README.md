@@ -37,12 +37,5 @@ Write it if you need it.
 ## Linux
 Write it if you need it.
 
-# Starting a project
-Add when you do this.
-
-# Joining an existing project
-
-- [ ] Clone the Git Repository
-- [ ] Install Dependencies
 
 
