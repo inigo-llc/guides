@@ -5,6 +5,7 @@
 
 - [Setup Guide](https://help.github.com/articles/set-up-git/)
 - [More Info](http://git-scm.com/)
+- Some useful git aliases to add to your [.gitconfig](https://gist.github.com/jweakley/8abe7e42517ffa2b04f4)
 
 ### Ruby
 *The version is specified by each project*
