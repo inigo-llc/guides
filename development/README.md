@@ -2,6 +2,11 @@
 
 ## Mac
 
+### TL;DR
+Run the following command `\curl -sSL https://raw.githubusercontent.com/inigo-llc/guides/master/development/setup-osx.sh | bash`
+
+### Git Version Control
+
 ### Ruby
 *The version is specified by each project*
 
