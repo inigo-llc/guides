@@ -9,7 +9,7 @@ class Installer
   def install_program(program, noisy=true)
     if program_exists?(program)
       puts "#{program} is already installed" if noisy
-      # TODO version check
+      run_update_script(program, noisy)
     else
       puts "Installing #{program}" if noisy
       check_prerequisites(program, noisy)
@@ -41,8 +41,11 @@ class Installer
     when 'npm'
       system('brew update') # TODO Move this check
       system('brew install node')
-    when 'postgresql'
+    when 'postgres'
       system('brew install postgresql')
+      system('mkdir -p ~/Library/LaunchAgents')
+      system('ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents')
+      system('launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist')
     when 'hub'
       system('brew install hub')
     else
@@ -50,9 +53,29 @@ class Installer
     end
   end
 
+  def run_update_script(program, noisy=true)
+    case program
+    when 'git'
+      system('brew upgrade git')
+    when 'brew'
+      system('brew update')
+    when 'npm'
+      system('brew upgrade node')
+    when 'postgres'
+      system('brew upgrade postgresql')
+      system('mkdir -p ~/Library/LaunchAgents')
+      system('ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents')
+      system('launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist')
+    when 'hub'
+      system('brew upgrade hub')
+    else
+      # TODO?
+    end
+  end
+
   def find_prerequisites(program)
     case program
-    when 'git', 'npm', 'postgresql', 'hub'
+    when 'git', 'npm', 'postgres', 'hub'
       ['brew']
     when 'bower'
       ['npm']
