@@ -1,7 +1,7 @@
 class Installer
   def self.full_install
     ruby_bot = Installer.new
-    ['git', 'npm', 'bower'].each do |program|
+    ['git', 'npm', 'bower', 'postgres', 'hub'].each do |program|
       ruby_bot.install_program(program)
     end
   end
@@ -24,8 +24,7 @@ class Installer
   end
 
   def check_prerequisites(program, noisy=true)
-    prerequisites = find_prerequisites(program)
-    prerequisites.each do |program|
+    find_prerequisites(program).each do |program|
       install_program(program, false)
     end
   end
@@ -42,6 +41,10 @@ class Installer
     when 'npm'
       system('brew update') # TODO Move this check
       system('brew install node')
+    when 'postgresql'
+      system('brew install postgresql')
+    when 'hub'
+      system('brew install hub')
     else
       # TODO?
     end
@@ -49,16 +52,41 @@ class Installer
 
   def find_prerequisites(program)
     case program
-    when 'git'
+    when 'git', 'npm', 'postgresql', 'hub'
       ['brew']
     when 'bower'
       ['npm']
-    when 'npm'
-      ['brew']
     else
       []
     end
   end
 end
 
+class Gitconfig
+  def self.setup_config
+    ruby_bot = Gitconfig.new
+    ruby_bot.add_aliases
+  end
+
+  def add_aliases
+    add_config('alias.co', 'checkout')
+    add_config('alias.st', 'status')
+    add_config('alias.aa', 'add --all')
+    add_config('alias.ci', 'commit')
+    add_config('alias.df', 'diff')
+    add_config('alias.create-branch', "!sh -c 'git push origin HEAD:refs/heads/$1 && git fetch origin && git branch --track $1 origin/$1 && cd . && git checkout $1' -")
+    add_config('alias.merge-branch', "!git checkout master && git merge @{-1}")
+    add_config('alias.delete-branch', "!sh -c 'git push origin :refs/heads/$1 && git remote prune origin && git branch -D $1' -")
+    add_config('alias.rebase-origin', "!git fetch origin && git rebase origin/master")
+    add_config('alias.irebase-origin', "!git fetch origin && git rebase -i origin/master")
+    add_config('alias.force-push-branch', "!git push -f origin HEAD")
+    add_config('alias.hard-reset-branch', "!sh -c 'git fetch origin && branch=$(git symbolic-ref --short HEAD) && git reset --hard origin/\"$branch\"' -")
+  end
+
+  def add_config(var, setting)
+    system("git config --global #{var} \"#{setting}\"")
+  end
+end
+
 Installer.full_install
+Gitconfig.setup_config
