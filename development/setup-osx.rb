@@ -1,7 +1,7 @@
 class Installer
   def self.full_install
     ruby_bot = Installer.new
-    ['git', 'npm', 'bower'].each do |program|
+    ['git', 'npm', 'bower', 'postgres', 'hub'].each do |program|
       ruby_bot.install_program(program)
     end
   end
@@ -24,8 +24,7 @@ class Installer
   end
 
   def check_prerequisites(program, noisy=true)
-    prerequisites = find_prerequisites(program)
-    prerequisites.each do |program|
+    find_prerequisites(program).each do |program|
       install_program(program, false)
     end
   end
@@ -42,6 +41,10 @@ class Installer
     when 'npm'
       system('brew update') # TODO Move this check
       system('brew install node')
+    when 'postgresql'
+      system('brew install postgresql')
+    when 'hub'
+      system('brew install hub')
     else
       # TODO?
     end
@@ -49,12 +52,10 @@ class Installer
 
   def find_prerequisites(program)
     case program
-    when 'git'
+    when 'git', 'npm', 'postgresql', 'hub'
       ['brew']
     when 'bower'
       ['npm']
-    when 'npm'
-      ['brew']
     else
       []
     end
