@@ -63,9 +63,6 @@ class Installer
       system('brew upgrade node')
     when 'postgres'
       system('brew upgrade postgresql')
-      system('mkdir -p ~/Library/LaunchAgents')
-      system('ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents')
-      system('launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist')
     when 'hub'
       system('brew upgrade hub')
     else
