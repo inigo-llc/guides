@@ -39,8 +39,8 @@ class Installer
     when 'bower'
       system('npm install -g bower')
     when 'npm'
-      system('brew update') # TODO Move this check
-      system('brew install node')
+      system('curl https://raw.githubusercontent.com/creationix/nvm/v0.24.1/install.sh | bash')
+      system('nvm install stable')
     when 'postgres'
       system('brew install postgresql')
       system('mkdir -p ~/Library/LaunchAgents')
@@ -60,7 +60,8 @@ class Installer
     when 'brew'
       system('brew update')
     when 'npm'
-      system('brew upgrade node')
+      system('curl https://raw.githubusercontent.com/creationix/nvm/v0.24.1/install.sh | bash')
+      system('nvm install stable')
     when 'postgres'
       system('brew upgrade postgresql')
     when 'hub'
@@ -72,7 +73,7 @@ class Installer
 
   def find_prerequisites(program)
     case program
-    when 'git', 'npm', 'postgres', 'hub'
+    when 'git', 'postgres', 'hub'
       ['brew']
     when 'bower'
       ['npm']
