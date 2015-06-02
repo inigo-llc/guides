@@ -82,4 +82,7 @@ Write it if you need it.
 Write it if you need it.
 
 
+### If you get 500 error, check rails server in console
+*Apple users, check that postgress is running.
+
 
