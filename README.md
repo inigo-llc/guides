@@ -3,7 +3,7 @@
 - [Starting a new project](https://github.com/wildland/ember-cli-rails)
 - [Getting work done](/development/workflow#getting-work-done)
 
-## Prime Directives:
+## Prime Directives
 - Be consistent.
 - Don't violate a guideline/default without a good reason.
  - A reason is good when you can convince a teammate.
