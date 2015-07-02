@@ -1,4 +1,4 @@
 # Getting Work Done
 
-- [Communication](/workflow/communication)
-- [Git](/workflow/git)
+- [Communication](development/workflow/communication)
+- [Git](development/workflow/git)
