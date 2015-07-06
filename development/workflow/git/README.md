@@ -6,6 +6,12 @@
 - Perform work in a feature branch.
 - Use a [pull request](https://help.github.com/articles/using-pull-requests/) for code reviews.
 
+# Milestones
+- Add to this
+
+# Issues
+- Only assign yourself to one ticket per milstone
+
 # Starting a new feature
 Assign yourself to the issue that corrosponds to your feature. _If their is no issue, make one and assign yourself to it._
 
