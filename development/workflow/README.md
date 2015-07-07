@@ -1,7 +1,7 @@
 # Getting Work Done
 General Tips
 - Finish your ideas before moving to the next thing. 
- - An idea is finished if it is possbile for anyone else is able to coninue where you left off.
+ - An idea is finished if it is possbile for anyone else is able to continue where you left off.
  - Before you take any breaks or leave for the day leave your work in a finished state.
 - Allow yourself the freedom to make mistakes.
  - Use revision control and backups to let you undo things that don't turn out the way you inteneded.
