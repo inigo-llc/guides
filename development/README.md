@@ -5,13 +5,9 @@
 ### TL;DR
 To install with rbenv, run:
 ```bash
-$ \curl -sSL https://raw.githubusercontent.com/wildland/guides/master/development/setup-osx-rbenv.sh | bash
-```
-
-To install with RVM (Not recommended), run:
-```bash
 $ \curl -sSL https://raw.githubusercontent.com/wildland/guides/master/development/setup-osx.sh | bash
 ```
+Once that is done install [Postgres](http://postgresapp.com/)
 
 ### Git Version Control
 
@@ -20,8 +16,8 @@ $ \curl -sSL https://raw.githubusercontent.com/wildland/guides/master/developmen
 
 Version Managers make it easier:
 
-- [RVM](http://rvm.io/) 
 - [RBENV](https://github.com/sstephenson/rbenv#homebrew-on-mac-os-x) *Preferred*
+- [RVM](http://rvm.io/)
 
 ### Node
 *The version is specified by each project*

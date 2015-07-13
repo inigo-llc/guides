@@ -1,7 +1,7 @@
 class Installer
   def self.full_install
     ruby_bot = Installer.new
-    ['git', 'npm', 'bower', 'postgres', 'hub'].each do |program|
+    ['git', 'npm', 'bower', 'rbenv', 'ruby-build', 'hub'].each do |program|
       ruby_bot.install_program(program)
     end
   end
@@ -41,11 +41,10 @@ class Installer
     when 'npm'
       system('curl https://raw.githubusercontent.com/creationix/nvm/v0.24.1/install.sh | bash')
       system('nvm install stable')
-    when 'postgres'
-      system('brew install postgresql')
-      system('mkdir -p ~/Library/LaunchAgents')
-      system('ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents')
-      system('launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist')
+    when 'ruby-build'
+      system('brew install ruby-build')
+    when 'rbenv'
+      system('brew install rbenv')
     when 'hub'
       system('brew install hub')
     else
@@ -62,10 +61,12 @@ class Installer
     when 'npm'
       system('curl https://raw.githubusercontent.com/creationix/nvm/v0.24.1/install.sh | bash')
       system('nvm install stable')
-    when 'postgres'
-      system('brew upgrade postgresql')
     when 'hub'
       system('brew upgrade hub')
+    when 'ruby-build'
+      system('brew upgrade ruby-build')
+    when 'rbenv'
+      system('brew upgrade rbenv')
     else
       # TODO?
     end
@@ -73,7 +74,9 @@ class Installer
 
   def find_prerequisites(program)
     case program
-    when 'git', 'postgres', 'hub'
+    when 'ruby-build'
+      ['rbenv']
+    when 'git', 'rbenv', 'hub'
       ['brew']
     when 'bower'
       ['npm']
@@ -95,9 +98,9 @@ class Gitconfig
     add_config('alias.aa', 'add --all')
     add_config('alias.ci', 'commit')
     add_config('alias.df', 'diff')
-    add_config('alias.create-branch', "!sh -c 'git push origin HEAD:refs/heads/$1 && git fetch origin && git branch --track $1 origin/$1 && cd . && git checkout $1' -")
+    add_config('alias.create-branch', "!sh -c 'git push origin HEAD:refs/heads/\$1 && git fetch origin && git branch --track \$1 origin/\$1 && cd . && git checkout \$1' -")
     add_config('alias.merge-branch', "!git checkout master && git merge @{-1}")
-    add_config('alias.delete-branch', "!sh -c 'git push origin :refs/heads/$1 && git remote prune origin && git branch -D $1' -")
+    add_config('alias.delete-branch', "!sh -c 'git push origin :refs/heads/\$1 && git remote prune origin && git branch -D \$1' -")
     add_config('alias.rebase-origin', "!git fetch origin && git rebase origin/master")
     add_config('alias.irebase-origin', "!git fetch origin && git rebase -i origin/master")
     add_config('alias.force-push-branch', "!git push -f origin HEAD")
