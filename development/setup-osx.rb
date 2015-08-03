@@ -1,7 +1,14 @@
 class Installer
   def self.full_install
     ruby_bot = Installer.new
-    ['git', 'npm', 'bower', 'rbenv', 'ruby-build', 'hub'].each do |program|
+    [
+      'git', 'hub',
+      'npm', 'bower',
+      'psql',
+      'rbenv', 'ruby-build',
+      'cask',
+      'VirtualBox', 'boot2docker', 'docker-compose'
+    ].each do |program|
       ruby_bot.install_program(program)
     end
   end
@@ -20,7 +27,16 @@ class Installer
   protected
 
   def program_exists?(program)
-    system("which #{ program} > /dev/null 2>&1")
+    case program
+    when 'cask'
+      system("brew list brew-cask > /dev/null 2>&1")
+    when 'VirtualBox'
+      system("brew cask list virtualbox > /dev/null 2>&1")
+    when 'psql'
+      system("brew cask list postgres > /dev/null 2>&1")
+    else
+      system("which #{ program} > /dev/null 2>&1")
+    end
   end
 
   def check_prerequisites(program, noisy=true)
@@ -39,14 +55,25 @@ class Installer
     when 'bower'
       system('npm install -g bower')
     when 'npm'
-      system('curl https://raw.githubusercontent.com/creationix/nvm/v0.24.1/install.sh | bash')
+      system('curl https://raw.githubusercontent.com/creationix/nvm/v0.24.1/install.sh | bash') # TODO find a way to figure out latest version
       system('nvm install stable')
     when 'ruby-build'
       system('brew install ruby-build')
     when 'rbenv'
       system('brew install rbenv')
+    when 'psql'
+      system('brew cask install postgres --appdir=/Applications')
+      system('brew install postgres')
+    when 'cask'
+      system('brew install caskroom/cask/brew-cask')
     when 'hub'
       system('brew install hub')
+    when 'boot2docker'
+      system('brew install boot2docker')
+    when 'docker-compose'
+      system('brew install docker-compose')
+    when 'VirtualBox'
+      system('brew cask install virtualbox')
     else
       # TODO?
     end
@@ -67,6 +94,17 @@ class Installer
       system('brew upgrade ruby-build')
     when 'rbenv'
       system('brew upgrade rbenv')
+    when 'psql'
+      system('brew cask update postgres')
+      system('brew upgrade postgres')
+    when 'cask'
+      system('brew upgrade brew-cask')
+    when 'boot2docker'
+      system('brew upgrade boot2docker')
+    when 'docker-compose'
+      system('brew upgrade docker-compose')
+    when 'VirtualBox'
+      system('brew cask update virtualbox')
     else
       # TODO?
     end
@@ -80,6 +118,12 @@ class Installer
       ['brew']
     when 'bower'
       ['npm']
+    when 'boot2docker', 'docker-compose'
+      ['brew', 'VirtualBox']
+    when 'VirtualBox', 'psql'
+      ['cask']
+    when 'cask'
+      ['brew']
     else
       []
     end

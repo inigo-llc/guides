@@ -74,7 +74,8 @@ To install `ember-cli` via npm run:
 ```bash
 $ npm install -g ember-cli
 ```
-
+### Postgres
+[More Information](http://postgresapp.com/)
 
 ## Windows
 Write it if you need it.
