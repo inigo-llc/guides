@@ -30,6 +30,14 @@ Every weekday there will be a standup meeting that can be attended remotely on [
  - Pick issues that are unassigned and part of the current milestone.
 1. Work on some internal projects.
 
+## Recording what you did
+- Record your hours by the end of day. Make sure to allocate them to projects and/or specific github issues.
+
+# Monthly Workflow
+## Recording what you did
+- Double check your hours for the month.
+- Turn in your hours by the 1st of the month.
+
 # Specific tools
 - [Communication](/development/workflow/communication)
 - [Git](/development/workflow/git)
