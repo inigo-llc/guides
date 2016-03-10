@@ -147,7 +147,7 @@ class Gitconfig
     add_config('alias.delete-branch', "!sh -c 'git push origin :refs/heads/\$1 && git remote prune origin && git branch -D \$1' -")
     add_config('alias.rebase-origin', "!git fetch origin && git rebase origin/master")
     add_config('alias.irebase-origin', "!git fetch origin && git rebase -i origin/master")
-    add_config('alias.force-push-branch', "!git push -f origin HEAD")
+    add_config('alias.force-push-branch', "!git push --force-with-lease origin HEAD")
     add_config('alias.hard-reset-branch', "!sh -c 'git fetch origin && branch=$(git symbolic-ref --short HEAD) && git reset --hard origin/\"$branch\"' -")
   end
 
