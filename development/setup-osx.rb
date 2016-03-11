@@ -6,6 +6,7 @@ class Installer
       'npm', 'bower',
       'psql',
       'rbenv', 'ruby-build',
+      'bundler', 'foreman', 'ember-cli',
       'cask',
       'VirtualBox', 'boot2docker', 'docker-compose'
     ].each do |program|
@@ -34,6 +35,8 @@ class Installer
       system("brew cask list virtualbox > /dev/null 2>&1")
     when 'psql'
       system("brew cask list postgres > /dev/null 2>&1")
+    when 'ember-cli', 'bower'
+      system("npm list -g --depth=0 #{program} > /dev/null 2>&1")
     else
       system("which #{ program} > /dev/null 2>&1")
     end
@@ -74,6 +77,12 @@ class Installer
       system('brew install docker-compose')
     when 'VirtualBox'
       system('brew cask install virtualbox')
+    when 'bundler'
+      system('gem install bundler')
+    when 'foreman'
+      system('gem install foreman')
+    when 'ember-cli'
+      system('npm install -g ember-cli')
     else
       # TODO?
     end
@@ -105,6 +114,12 @@ class Installer
       system('brew upgrade docker-compose')
     when 'VirtualBox'
       system('brew cask update virtualbox')
+    when 'bundler'
+      system('gem update bundler')
+    when 'foreman'
+      system('gem update foreman')
+    when 'ember-cli'
+      system('npm update -g ember-cli')
     else
       # TODO?
     end
@@ -112,11 +127,11 @@ class Installer
 
   def find_prerequisites(program)
     case program
-    when 'ruby-build'
+    when 'ruby-build', 'bundler', 'foreman'
       ['rbenv']
     when 'git', 'rbenv', 'hub'
       ['brew']
-    when 'bower'
+    when 'bower', 'ember-cli'
       ['npm']
     when 'boot2docker', 'docker-compose'
       ['brew', 'VirtualBox']
