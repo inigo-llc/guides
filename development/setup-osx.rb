@@ -1,6 +1,7 @@
 class Installer
   def self.full_install
     ruby_bot = Installer.new
+    ruby_bot.ensure_bash_profile
     [
       'git', 'hub',
       'npm', 'bower',
@@ -11,6 +12,13 @@ class Installer
       'VirtualBox', 'boot2docker', 'docker-compose'
     ].each do |program|
       ruby_bot.install_program(program)
+    end
+  end
+
+  def ensure_bash_profile
+    bash_profile_location = '~/.bash_profile'
+    unless File.exist?(bash_profile_location)
+      File.open(bash_profile_location, 'w') {}
     end
   end
 
