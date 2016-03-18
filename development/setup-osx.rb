@@ -18,7 +18,7 @@ class Installer
   def ensure_bash_profile
     bash_profile_location = '~/.bash_profile'
     unless File.exist?(bash_profile_location)
-      File.write(bash_profile_location, "")
+      File.write(File.expand_path(bash_profile_location), "")
     end
   end
 
