@@ -44,6 +44,7 @@ When you are feel like you are finished and have completed the feature:
 1. When you are satified, run `git irebase-origin` to prep your code for review. 
  - Squash commits like "Fixes whitespace" into one or a small number of valuable commit(s). 
  - Edit your commit messages to reveal intent.
+1. Use `git force-push-branch` to push the updated git history to github.
 1. Create a [pull request](https://help.github.com/articles/using-pull-requests/) or `git pull-request` if you have [hub](https://github.com/github/hub) installed.
  - Make sure you link the issue in the message of the pull request. Example: `Fixes #13`.
 1. Let someone else know that your request is ready for review.
