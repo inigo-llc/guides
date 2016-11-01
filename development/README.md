@@ -3,11 +3,7 @@
 ## Mac
 
 ### TL;DR
-To install with rbenv, run:
-```bash
-$ \curl -sSL https://raw.githubusercontent.com/wildland/guides/master/development/setup-osx.sh | bash
-```
-Once that is done install [Postgres](http://postgresapp.com/)
+Use [Daypack](https://github.com/wildland/daypack).
 
 ### Git Version Control
 
