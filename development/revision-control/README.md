@@ -15,6 +15,7 @@ Please fill out this template as best as you can, if something does not apply, i
 
 #### Creating Branches
 There are two primary types of branches 1) issue branch and 2) feature branch.
+
 1. Issue branches are designed to be pulled into the `master` branch or a
    feature branch. They should be named similar to `issue-<###>-<abbreviated>-<tile>-<dash>-<separated>`.
 2. Feature branches are designed to have issue branches merged into them. They
