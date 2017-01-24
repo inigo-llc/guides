@@ -1,5 +1,5 @@
 # Getting Work Done with Git
-##General care and feeding of your git repository
+## General care and feeding of your git repository
 - Avoid including files in source control that are specific to your
   development machine or process.
 - Delete local and remote feature branches after merging.
@@ -15,7 +15,7 @@
 # Starting a new feature
 Assign yourself to the issue that corrosponds to your feature. _If their is no issue, make one and assign yourself to it._
 
-If you do not have a local copy of the repository, use `git clone <repo>`. _`<repo>` is the url for the remote git repository on Github._ 
+If you do not have a local copy of the repository, use `git clone <repo>`. _`<repo>` is the url for the remote git repository on Github._
 - Example: `git@github.com:wildland/guides.git`
 
 Update your local repository with the latest changes.
@@ -41,8 +41,8 @@ Here are some things to keep in mind when you are working on any feature:
 When you are feel like you are finished and have completed the feature:
 
 1. Review your work. _Remember that other people on the team will be reviewing, so make sure that it is your best work._
-1. When you are satified, run `git irebase-origin` to prep your code for review. 
- - Squash commits like "Fixes whitespace" into one or a small number of valuable commit(s). 
+1. When you are satified, run `git irebase-origin` to prep your code for review.
+ - Squash commits like "Fixes whitespace" into one or a small number of valuable commit(s).
  - Edit your commit messages to reveal intent.
 1. Use `git force-push-branch` to push the updated git history to github.
 1. Create a [pull request](https://help.github.com/articles/using-pull-requests/) or `git pull-request` if you have [hub](https://github.com/github/hub) installed.
