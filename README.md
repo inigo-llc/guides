@@ -17,7 +17,7 @@ Benjamin Franklin
  - [Windows](/system-setup#windows)
 
 ## Daily Tasks
--	[SCRUM Morning Calls](/daily-tasks#SCRUM Morning Calls)
+-	[Morning Campfire](/daily-tasks#morning-campfire)
 -	[Weekly Developer Meetings](/daily-tasks#weekly-developer-meetings)
 -	[Sprint Kickoff Meetings](/daily-tasks#sprint-kickoff-meetings)
 -	[End of Sprint Meetings](/daily-tasks#end-of-sprint-meetings)
