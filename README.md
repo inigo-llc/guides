@@ -1,7 +1,7 @@
 > “If you fail to plan, you are planning to fail!”
 Benjamin Franklin
 
-# Guides
+# Wildland Trail Guide
 
 ## Prime Directives
 - [Agile Manifesto](/prime-directives#agile-manifesto)
@@ -20,7 +20,7 @@ Benjamin Franklin
 
 - [New Ruby/Raisl Js/Ember Project](https://github.com/wildland/trailhead)
 
-## Daily Tasks
+## Daily Meetings/Tasks
 -	[Morning Campfire](/daily-tasks#morning-campfire)
 -	[Weekly Developer Lead Meetings](/daily-tasks#weekly-developer-lead-meetings)
 -	[Hike Kickoff Meetings](/daily-tasks#hike-kickoff-meetings)
