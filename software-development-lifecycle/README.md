@@ -1,6 +1,6 @@
-# New Projects
+# Software Development Life-Cycle
 
-This covers the Software Development Life-Cycle for Wildland Projects. This si not a strict workflow; instead it is a guideline for how projects should be done. The most important principle is that we are an Agile shop and we can adapt to what works for each client to meet their needs.
+This covers the Software Development Life-Cycle for Wildland Projects. This is not a strict workflow; instead it is a guideline for how projects could be completed. The most important principle is that we are an [Agile](/prime-directives#agile-manifesto) shop and we can adapt to what works for each client to meet their needs.
 
 *If a project is struggling, consider if the workflow here is causing a problem and let the team know ASAP. If the problem can be resolved by following the workflow more strictly then ask for help implementing it for the team.*
 
@@ -101,7 +101,7 @@ Lastly we need to have the client understand and agree on rough estimates on dea
 The final project schedule and timelines cannot be completed until after the "Master Story List" is completed and sized. Therefore, there should be lots or room in these timelines for changes.
 
 #### Project Initialization Diagram
-![workflow diagram](../new-projects/phase-1.png "Project Initialization Diagram")
+![workflow diagram](../software-development-lifecycle/phase-1.png "Project Initialization Diagram")
 
 ## Technical Review or Design Document
 *This part of new projects should be done by the Development Lead with help from the project manager as needed*
@@ -178,7 +178,7 @@ For the purpose of estimating the time of the project the Development Lead shoul
 The section of the technical review document is used to communicate to the client the number of resource the project will be assigned. This does not need to be exact, but it should give a general idea of the structure of the team. This section should also relate the number of team members to the timeframe estimated in the story sizing.
 
 #### Technical Review Diagram
-![workflow diagram](../new-projects/phase-2.png "Technical Review Diagram")
+![workflow diagram](../software-development-lifecycle/phase-2.png "Technical Review Diagram")
 
 ## Project Plan
 *This phase should be done by the project manager and the development lead with input from others as needed*
@@ -283,7 +283,7 @@ The schedule should indicate:
 3) End Date
 
 #### Project Plan Diagram
-![workflow diagram](../new-projects/phase-3.png "Project Plan Diagram")
+![workflow diagram](../software-development-lifecycle/phase-3.png "Project Plan Diagram")
 
 ## Development Hikes
 
@@ -328,7 +328,7 @@ See details [here](../daily-tasks#end-of-hike-meetings)
 When a feature is completed during a Hike, a [deploy to production meeting](/daily-tasks#feature-deploy-to-production) for that feature should be scheduled.
 
 #### Development Hike Diagram
-![workflow diagram](../new-projects/phase-4.png "Development Hike Diagram")
+![workflow diagram](../software-development-lifecycle/phase-4.png "Development Hike Diagram")
 
 ## Closeout Project and Retrospective
 
@@ -353,4 +353,4 @@ If the answers are both yes, then the development team should schedule an end of
 3) List Lessons Learned
 
 #### Closeout Project Diagram
-![workflow diagram](../new-projects/phase-5.png "Closeout Project Diagram")
+![workflow diagram](../software-development-lifecycle/phase-5.png "Closeout Project Diagram")
