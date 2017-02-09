@@ -72,7 +72,18 @@ The final project schedule and timelines cannot be completed until after the "Ma
 #### Project Initialization Diagram
 ![workflow diagram](../new-projects/phase-1.png "Project Initialization Diagram")
 
-## Technical Review or Design
+## Technical Review or Design Document
+*This part of new projects should be done by the Development Lead with help from the project manager as needed*
+
+#### Document Project Purpose
+#### Document Project Scope
+#### Document Project/Industry Definitions
+#### Document Project Technologies
+#### Create Master Story List
+#### Build Technical Diagrams
+##### Use Case Diagrams
+##### Class Diagrams
+##### Database Diagrams
 
 ## Project Plan
 (Master Story List)

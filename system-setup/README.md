@@ -24,6 +24,13 @@ Version Managers make it easier:
 ### NPM
 Comes with node [now](https://github.com/npm/npm#super-easy-install).
 
+If your project has a `npm-shrinkwrap.json` file, you may need to do the following to update `package.json` versions.
+
+1) delete the `npm-shrinkwrap.json` file
+2) execute `npm install`
+3) execute `npm prune`
+4) execute `npm shrinkwrap --dev`
+
 ### Homebrew
 [More Information](http://brew.sh/)
 

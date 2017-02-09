@@ -18,10 +18,10 @@ Benjamin Franklin
 
 ## Daily Tasks
 -	[Morning Campfire](/daily-tasks#morning-campfire)
--	[Weekly Developer Meetings](/daily-tasks#weekly-developer-meetings)
--	[Sprint Kickoff Meetings](/daily-tasks#sprint-kickoff-meetings)
--	[End of Sprint Meetings](/daily-tasks#end-of-sprint-meetings)
--	[Sprint Deploys to Production](/daily-tasks#sprint-deploys-to-production)
+-	[Weekly Developer Lead Meetings](/daily-tasks#weekly-developer-lead-meetings)
+-	[Hike Kickoff Meetings](/daily-tasks#hike-kickoff-meetings)
+-	[End of Hike Meetings](/daily-tasks#end-of-hike-meetings)
+-	[Feature Deploy to Production](/daily-tasks#feature-deploy-to-production)
 
 ## New Projects
 -	[Project Initialization](/new-projects#project-initialization)
