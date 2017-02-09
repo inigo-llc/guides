@@ -241,7 +241,7 @@ The Master Story List will need to be entered into the revision control system. 
 
 Important things to consider:
 
-* * Create Milestones for the stages or features of the project first
+* Create Milestones for the stages or features of the project first
 * Tag issues to the milestone
 * Label stories with the size
 * Potentially create a multi-story feature branch issue by creating an issue with the feature description and a list of the issues that complete the feature. For example:
@@ -285,12 +285,66 @@ The schedule should indicate:
 
 This is Phase IV of the process to complete a project at Wildland.
 
+The term "Hike" is used here to describe a cycle of planned development work that covers at lest one week and at most three weeks. The exact time span is not as important as the process. Each Hike needs to start with a planning meeting and end with a retrospective meeting. The longest a Hike should be is the span of time that the team feels comfortable planning without interruption. The shortest length should be a Hike that implements a feature or stage of the project.
+
+#### Kickoff Planning Meeting [Monday] (2 hours)
+
+The development Hike starts with the [kickoff planning meeting](../daily-tasks#hike-kickoff-meetings). This should be scheduled and run by the project manager and technical lead.
+
+See details [here](../daily-tasks#hike-kickoff-meetings)
+
+#### Daily Campfire Meeting (15 min)
+
+During the Hike, the development team will be participating in the [daily campfire meetings](../daily-tasks#morning-campfire).
+
+See details [here](../daily-tasks#morning-campfire)
+
+It is important to communicate the issue # or story identification that work was done or or work is being done for.
+
+##### New Project Stories
+
+During the execution of a development Hike, a new story may be revealed from:
+
+* Existing story spits into multiple
+* Client ask for new features
+* Bugs are uncovered in production
+
+New Stories should be logged in the Master story list by the project manager when they are received. The new stories should be reviewed and sized by the development team at the end of the Hike so that they are ready for the next Hike.
+
+New stories that must be addressed right away should be assigned to a team member, size with that team member with the project manager, and that team member's list of stories should be adjusted to bump the lowest priority story to the next Hike.
+
+#### Hike Close Meeting [Friday] (2 hours)
+
+At the end of a Hike, the team needs to have a [closeout meeting](../daily-tasks#end-of-hike-meetings) to: size new stories, talk retrospective and check for completed features.
+
+See details [here](../daily-tasks#end-of-hike-meetings)
+
+#### Feature completed during Hike
+
+When a feature is completed during a Hike, a [deploy to production meeting](/daily-tasks#feature-deploy-to-production) for that feature should be scheduled.
+
 #### Development Hike Diagram
 ![workflow diagram](../new-projects/phase-4.png "Development Hike Diagram")
 
 ## Closeout Project and Retrospective
 
 This is Phase V (last) of the process to complete a project at Wildland.
+
+When closing out a project there are two main questions that must be answered:
+
+1) **Does the Project Meet the Customer's Stated Goals?**
+2) **Does the Project Add the Value Intended?**
+
+If the answer is no to either of these, then the reason for the miss-alignment should be identified and stories should be enter into the Master Story list to resolve this. Client should be aware that:
+
+  * If they did not provide a goal as part of the initially design, the extra work must be negotiated in addition to the original plan.
+  * They must provide a clear example of any problems.
+
+If the answers are both yes, then the development team should schedule an end of project meeting to do a project retrospective. The main question during this retrospective meeting is to identify:
+
+1) What went well?
+1) What did not go well?
+1) List Lessons Learned
 
 #### Closeout Project Diagram
 ![workflow diagram](../new-projects/phase-5.png "Closeout Project Diagram")
