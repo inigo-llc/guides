@@ -5,7 +5,6 @@
 ### TL;DR
 Use [Daypack](https://github.com/wildland/daypack).
 
-Install:
 ### Ruby
 *The version is specified by each project*
 

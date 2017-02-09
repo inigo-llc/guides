@@ -16,6 +16,10 @@ Benjamin Franklin
  - [Linux](/system-setup#linux)
  - [Windows](/system-setup#windows)
 
+## Starting New Projects
+
+- [New Ruby/Raisl Js/Ember Project](https://github.com/wildland/trailhead)
+
 ## Daily Tasks
 -	[Morning Campfire](/daily-tasks#morning-campfire)
 -	[Weekly Developer Lead Meetings](/daily-tasks#weekly-developer-lead-meetings)
@@ -23,12 +27,12 @@ Benjamin Franklin
 -	[End of Hike Meetings](/daily-tasks#end-of-hike-meetings)
 -	[Feature Deploy to Production](/daily-tasks#feature-deploy-to-production)
 
-## New Projects
--	[Project Initialization](/new-projects#project-initialization)
--	[Technical Review/Design](/new-projects#technical-review-or-design)
--	[Project Plan (Master Story List)](/new-projects#project-plan)
--	[Development Hikes](/new-projects#development-hikes)
--	[Closeout Project & Retrospective](/new-projects#closeout-project-and-retrospective)
+## Software Development Life-Cycle (SDLC)
+-	[Project Initialization](/software-development-lifecycle#project-initialization)
+-	[Technical Review/Design](/software-development-lifecycle#technical-review-or-design)
+-	[Project Plan (Master Story List)](/software-development-lifecycle#project-plan)
+-	[Development Hikes](/software-development-lifecycle#development-hikes)
+-	[Closeout Project & Retrospective](/software-development-lifecycle#closeout-project-and-retrospective)
 
 ## Roles and Responsibilities
 -	[Chief Technology Officer](/developer-roles#chief-technology-officer)

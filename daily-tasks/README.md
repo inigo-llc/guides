@@ -95,4 +95,4 @@ Things to consider before deploying new code:
 4) Turn off maintenance if needed
 
 #### Hike Workflow Diagram
-![workflow diagram](../new-projects/phase-4.png "Hike Workflow Diagram")
+![workflow diagram](../software-development-lifecycle/phase-4.png "Hike Workflow Diagram")
