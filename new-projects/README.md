@@ -7,6 +7,7 @@ This is Phase I of the process to complete a project at Wildland.
 
 #### Project Description
 This should be a short or long description of the project that answers some of the questions:
+
 1) Who are the users?
    * Is this used by the client?
    * Is this used by client customers?
@@ -16,6 +17,7 @@ This should be a short or long description of the project that answers some of t
 
 #### Value Proposition
 If possible, describe or diagram out the quantifiable value does this project is expected to add to the client?
+
 1) Increase in sales
 2) Process improvement
    * Current task time
@@ -32,6 +34,7 @@ Is this a new solution, an upgrade, or improvement? For upgrades and improvement
 
 #### Identify Core Technologies
 Need to identify the core technologies that are expected to be used for the project.
+
 1) User Interface (Front-end)
 2) Processing and/or Calculations (Back-end)
 3) Data Storage (Database or Files)
@@ -44,6 +47,7 @@ Need to identify the core technologies that are expected to be used for the proj
 In general identify any stages and/or features of the project.
 
 For example:
+
 1) Design Font-end
 2) Database Design
 3) Build Core Data Entry
@@ -213,7 +217,8 @@ For more on god sizing, read more here: [10 TIPS FOR BETTER STORY ESTIMATION](ht
 The Master Story List will need to be entered into the revision control system. This does not need to be done all at once if it is very long, but at least the high priority items or enough to get started on a development Hike. Ideally all stories that are sized will be entered in the revision control system.
 
 Important things to consider:
-* Create Milestones for the stages or features of the project first
+
+* * Create Milestones for the stages or features of the project first
 * Tag issues to the milestone
 * Label stories with the size
 * Potentially create a multi-story feature branch issue by creating an issue with the feature description and a list of the issues that complete the feature. For example:
@@ -245,6 +250,7 @@ Once the Master Story List is completed, it should be reviewed by the a client s
 Using the final agreed on Master Story List the project manager should be able to build a project schedule ("Time") using the story sizes for ("Scope") and the team list as the ("Resources").
 
 The schedule should indicate:
+
 1) Start Date
 2) Number of Hikes (planned development cycles)
 3) End Date
