@@ -1,5 +1,9 @@
 # New Projects
 
+This covers the Software Development Life-Cycle for Wildland Projects. This si not a strict workflow; instead it is a guideline for how projects should be done. The most important principle is that we are an Agile shop and we can adapt to what works for each client to meet their needs.
+
+*If a project is struggling, consider if the workflow here is causing a problem and let the team know ASAP. If the problem can be resolved by following the workflow more strictly then ask for help implementing it for the team.*
+
 ## Project Initialization
 *New project initialization should be done with the client and the project manager at Wildland*
 
@@ -343,8 +347,10 @@ If the answer is no to either of these, then the reason for the miss-alignment s
 If the answers are both yes, then the development team should schedule an end of project meeting to do a project retrospective. The main question during this retrospective meeting is to identify:
 
 1) What went well?
-1) What did not go well?
-1) List Lessons Learned
+
+2) What did not go well?
+
+3) List Lessons Learned
 
 #### Closeout Project Diagram
 ![workflow diagram](../new-projects/phase-5.png "Closeout Project Diagram")
