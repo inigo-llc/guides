@@ -9,8 +9,10 @@ This is Phase I of the process to complete a project at Wildland.
 This should be a short or long description of the project that answers some of the questions:
 
 1) Who are the users?
+
    * Is this used by the client?
    * Is this used by client customers?
+
 2) What is the basic business task(s)?
 3) Are there any known inputs?
 4) What is the expected output?
@@ -20,12 +22,17 @@ If possible, describe or diagram out the quantifiable value does this project is
 
 1) Increase in sales
 2) Process improvement
+
    * Current task time
    * Expected task time with project
+
 3) Scaling an existing process
+
    * Current scale achievable
    * Expected scale with project
+
 4) Selling software package (subscription/one-time)
+
    * Annual sales expectation
    * Distribution
 
@@ -39,6 +46,7 @@ Need to identify the core technologies that are expected to be used for the proj
 2) Processing and/or Calculations (Back-end)
 3) Data Storage (Database or Files)
 4) Environment
+
    * Operating system?
    * Platform as a Service?
    * Other important software/technologies used
@@ -166,12 +174,14 @@ This phase is taking the technical review document and using it to setup a speci
 *This should be done by the project manger with assistance from others as needed*
 
 1) Assign Technical Lead - This is usually the Development Lead who created the technical review document. However it can be assigned to another team member if needed. This person is responsible for:
+
    * Approving all revision control pull requests into production
    * Communicating problem to project manager in a timely manner
    * Managing the overall technical design of the project
    * Managing technical debt of the project
 
 2) Assign Design Lead - There should be a project design lead to is responsible for:
+
    * Final approval of Wireframes
    * The living Style Guide of the project
    * Overall visual look and feel of the project
