@@ -27,7 +27,7 @@ Benjamin Franklin
 -	[Project Initialization](/new-projects#project-initialization)
 -	[Technical Review/Design](/new-projects#technical-review-or-design)
 -	[Project Plan (Master Story List)](/new-projects#project-plan)
--	[Development Sprints](/new-projects#development-sprints)
+-	[Development Hikes](/new-projects#development-hikes)
 -	[Closeout Project & Retrospective](/new-projects#closeout-project-and-retrospective)
 
 ## Roles and Responsibilities
