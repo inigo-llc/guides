@@ -14,13 +14,16 @@ This should be a short or long description of the project that answers some of t
    * Is this used by client customers?
 
 2) What is the basic business task(s)?
+
 3) Are there any known inputs?
+
 4) What is the expected output?
 
 #### Value Proposition
 If possible, describe or diagram out the quantifiable value does this project is expected to add to the client?
 
 1) Increase in sales
+
 2) Process improvement
 
    * Current task time
@@ -43,8 +46,11 @@ Is this a new solution, an upgrade, or improvement? For upgrades and improvement
 Need to identify the core technologies that are expected to be used for the project.
 
 1) User Interface (Front-end)
+
 2) Processing and/or Calculations (Back-end)
+
 3) Data Storage (Database or Files)
+
 4) Environment
 
    * Operating system?
@@ -57,16 +63,23 @@ In general identify any stages and/or features of the project.
 For example:
 
 1) Design Font-end
+
 2) Database Design
+
 3) Build Core Data Entry
+
 4) Create Reporting Module
+
 5) Build Data Analytics Interface
-5) Create Exporting Module
+
+6) Create Exporting Module
 
 or
 
 1) Phase I: New Shipping Module
+
 2) Phase II: Add Item Tracking Module
+
 3) Phase III: Testing & QA
 
 #### Estimate Project Size
