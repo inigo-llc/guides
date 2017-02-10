@@ -240,6 +240,7 @@ Ideally sizing is done with a bind pole collaborative system such as [Pointing P
 For more on god sizing, read more here: [10 TIPS FOR BETTER STORY ESTIMATION](https://www.leadingagile.com/2014/01/10-tips-better-story-estimation/)
 
 #### Enter Stories Into Revision Control
+*This should be done by the development lead on the project*
 
 The Master Story List will need to be entered into the revision control system. This does not need to be done all at once if it is very long, but at least the high priority items or enough to get started on a development Hike. Ideally all stories that are sized will be entered in the revision control system.
 
@@ -318,19 +319,30 @@ New Stories should be logged in the Master story list by the project manager whe
 New stories that must be addressed right away should be assigned to a team member, size with that team member with the project manager, and that team member's list of stories should be adjusted to bump the lowest priority story to the next Hike.
 
 #### Hike Close Meeting [Friday] (2 hours)
+*This should be planned by the project manager*
 
 At the end of a Hike, the team needs to have a [closeout meeting](../daily-tasks#end-of-hike-meetings) to: size new stories, talk retrospective and check for completed features.
 
 See details [here](../daily-tasks#end-of-hike-meetings)
 
 #### Feature completed during Hike
+*This should be done by the development lead*
 
-When a feature is completed during a Hike, a [deploy to production meeting](/daily-tasks#feature-deploy-to-production) for that feature should be scheduled.
+When a feature is completed during a Hike, the feature will need a quality assurance phase to
+
+1) Merge into master for staging
+
+2) Verify that the feature is working
+
+3) Check for side effects against existing features
+
+4) Schedule a [deploy to production meeting](/daily-tasks#feature-deploy-to-production)
 
 #### Development Hike Diagram
 ![workflow diagram](../software-development-lifecycle/phase-4.png "Development Hike Diagram")
 
 ## Closeout Project and Retrospective
+*This is the responsibility of the CTO*
 
 This is Phase V (last) of the process to complete a project at Wildland.
 

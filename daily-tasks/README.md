@@ -1,4 +1,4 @@
-# Daily Tasks
+# Daily Meetings/Tasks
 
 ## Morning Campfire
 *This follows a daily SCRUM format with adjustments that meet the needs of the Wildland team.*
