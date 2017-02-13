@@ -29,7 +29,7 @@ Benjamin Franklin
 
 ## Software Development Life-Cycle (SDLC)
 -	[Project Initialization](/software-development-lifecycle#project-initialization)
--	[Technical Review/Design](/software-development-lifecycle#technical-review-or-design)
+-	[Technical Review/Design](/software-development-lifecycle#technical-review-or-design-document)
 -	[Project Plan (Master Story List)](/software-development-lifecycle#project-plan)
 -	[Development Hikes](/software-development-lifecycle#development-hikes)
 -	[Closeout Project & Retrospective](/software-development-lifecycle#closeout-project-and-retrospective)
