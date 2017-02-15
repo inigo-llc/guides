@@ -20,6 +20,11 @@ Benjamin Franklin
 
 - [New Ruby/Raisl Js/Ember Project](https://github.com/wildland/trailhead)
 
+## Releasing New Version
+
+- [Private Release Process](/releasing-versions#private-release-process)
+- [Public Release Process](/releasing-versions#public-release-process)
+
 ## Daily Meetings/Tasks
 -	[Morning Campfire](/daily-tasks#morning-campfire)
 -	[Weekly Developer Lead Meetings](/daily-tasks#weekly-developer-lead-meetings)
