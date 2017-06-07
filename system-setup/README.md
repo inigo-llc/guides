@@ -12,7 +12,7 @@ Version Managers make it easier:
 
 - [RBENV](https://github.com/sstephenson/rbenv#homebrew-on-mac-os-x) *Preferred* *
 - [RVM](http://rvm.io/)
-*In case rbenv does not override system Ruby version use >eval "$(rbenv init -)">
+*In case rbenv does not override system Ruby version set the shim path with `eval "$(rbenv init -)"`
 
 ### Node
 *The version is specified by each project*
