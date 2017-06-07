@@ -10,8 +10,10 @@ Use [Daypack](https://github.com/wildland/daypack).
 
 Version Managers make it easier:
 
-- [RBENV](https://github.com/sstephenson/rbenv#homebrew-on-mac-os-x) *Preferred* *
+- [RBENV](https://github.com/sstephenson/rbenv#homebrew-on-mac-os-x) *Preferred* 
 - [RVM](http://rvm.io/)
+
+
 *In case rbenv does not override system Ruby version set the shim path with `eval "$(rbenv init -)"`
 
 ### Node
