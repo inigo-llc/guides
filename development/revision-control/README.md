@@ -18,11 +18,9 @@ Please fill out this template as best as you can, if something does not apply, i
 #### Creating Branches
 There are two primary types of branches 1) issue branch and 2) multi-issue branch. A multi-issue branch is sometimes called a feature branch. However, it is a branch used to merge multiple issues into master at once.
 
-1. Issue branches are designed to be pulled into the `master` branch or a
-   feature branch. They should be named similar to `issue-<###>-<abbreviated>-<tile>-<dash>-<separated>`.
+1. Issue branches are the most common branches and are designed to be pulled directly into the `master` branch. However, a issue branch can also be pulled into a `feature` brach or `multi-issue` branch.
 
-2. Multi-Issue (Feature) branches are designed to have issue branches merged into them. They
-   should be named similar to `<abbreviated>-<feature>-<title>-<dash>-<separated>`.
+2. Multi-Issue (Feature) branches are designed to have issue branches merged into them. These are used when a collection of issues need to all be pushed in at once due to functional or feature dependancies. It is important not to merge `multi-issue` branches into a `multi-issue` branch.
 
 #### Pull Request
 Guide for GitHub [pull request](https://help.github.com/articles/using-pull-requests/).
