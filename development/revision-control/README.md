@@ -29,7 +29,7 @@ The specific process for executing a Pull Request (PR) for a Wildland Project is
 
 ##### Pull Request Process
 
-1. Initialize: Create the "New Pull Request" and provide a 1) Title and 2) a Description. The title should be descriptive enough that it is unique to the current work and indicates the purpose of the PR. The description should contain a longer description that details the purpose of the PR. The description should also contain one or more "Fixes #<Issue Number>" that link the issues being resolved by merging the PR. Some projects may have a template for the description, this should be filled out as accurate as possible if it exist.
+1. Initialize: Create the "New Pull Request" and provide a 1) Title, 2) a Description, and 3) Labels. The title should be descriptive enough that it is unique to the current work and indicates the purpose of the PR. The description should contain a longer description that details the purpose of the PR. The description should also contain one or more "Fixes #<Issue Number>" that link the issues being resolved by merging the PR. Some projects may have a template for the description, this should be filled out as accurate as possible if it exist. The Labels should at a minimum include the Milestone for time tracking. The Labels can also include the people who who should execute the tasks below in the role needed.
 
 2. Auto Validation: The PR will execute testing and additional processes to auto check the code changes. It make take several minutes to run all tests depending on the project configuration. I tis the responsibility of the developer requesting the PR to check ALL test and verify that they are passing.
 
@@ -37,9 +37,11 @@ The specific process for executing a Pull Request (PR) for a Wildland Project is
 
 4. Code Review: Once all test are passing and there are no merge conflicts, the requesting developer should request that the code be reviewed by the project Dev Lead. Dev Leads should request another team member for a code review on their work. See "Code Review" section for more details on this process.
 
-5. Approval: Once the PR have been reviewed, the Dev Lead will approve the PR for merging into the project.
+5. Functional Review: After the code has been reviewed and all test are passing. It is important to have a tester check the application functionality of the change before pulling in the new code. This means starting the application and running it to check that the requested feature is working. Additionally, there should be some effort put into checking features that may have been affect by the change. Testing the application can be done using a Heroku pipeline setup with auto PR instances, or by downloading the repo branch and testing locally.
 
-6. Merge: Once the PR is approved, reviewed, has no merge conflicts, and is passing all test it can be merged into the branch. The developer who requested the PR should be the one to execute the final merge.
+6. Approval: Once the PR have been reviewed for code and functionality, the Dev Lead will approve the PR for merging into the project.
+
+7. Merge: Once the PR is approved, tested for functionality, reviewed, has no merge conflicts, and is passing all test it can be merged into the branch. The developer who requested the PR should be the one to execute the final merge.
 
 #### Merging
 
