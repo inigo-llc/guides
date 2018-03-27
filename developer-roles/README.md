@@ -6,7 +6,7 @@ The role of the Chief Technology Officer (CTO) position is 1) help the Wildland 
 
 1) It is the CTO's job to monitor and improve the internal processes used by the Wildland team to increase employee satisfaction and productivity. The primary tool to do this is curating the [Software Development Life-Cycle (SDLC)](../software-development-lifecycle#software-development-life-cycle). In addition to this the CTO should actively engage team members in open discussion regarding their daily work activities and job satisfaction.
 
-2) It is the CTO's job to participate in meeting with the CEO and CIO to plan resource allocation and to prepare for new project growth. The primary tool for this is the Client Hours Budget VS Actual tool.
+2) It is the CTO's job to participate in meeting with the CEO and CFO to plan resource allocation and to prepare for new project growth. The primary tool for this is the Client Hours Budget VS Actual tool.
 
 3) It is the CTO's job to monitor future project and research new technologies that Wildland can use to leverage a better competitive position in the market. The primary method for doing this is to track the team skill-set with self evaluations, monitor the client pipeline for needed skills, and attempt to bridge the gap between the two with team training.
 
