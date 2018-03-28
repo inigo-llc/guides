@@ -73,4 +73,3 @@ Benjamin Franklin
  - [Bower](/development/package-managers#bower)
  - [NPM](/development/package-managers#npm)
  - [Docker](/development/tools/docker-deployment.md)
- - [Docker](/development/tools/docker-deployment)
