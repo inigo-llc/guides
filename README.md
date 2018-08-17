@@ -19,7 +19,7 @@ Benjamin Franklin
 ## Starting New Projects
 
 - [New Ruby/Rails Ember Project](https://github.com/wildland/trailhead)
-- [New Ruby/Rails Plugin]](/rails_plugin/README.md)
+- [New Rails Plugin]](/rails_plugin/README.md)
 
 ## Releasing New Version
 
