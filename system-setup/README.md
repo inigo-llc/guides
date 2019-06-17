@@ -14,7 +14,8 @@ Version Managers make it easier:
 - [RVM](http://rvm.io/)
 
 
-*In case rbenv does not override system Ruby version set the shim path with `eval "$(rbenv init -)"`
+*In case rbenv does not override system Ruby version add `echo 'if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi' >> ~/.bash_profile
+source ~/.bash_profile` to `.bash_profile`, restart terminal. 
 
 ### Node
 *The version is specified by each project*
